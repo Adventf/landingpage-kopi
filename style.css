@@ -1,0 +1,167 @@
+.navbar-brand {
+  font-family: "Tapestry", cursive;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+.navbar {
+  font-family: "Raleway", sans-serif;
+  z-index: 1;
+  position: relative;
+}
+.nav-link {
+  color: honeydew !important;
+  text-shadow: 1px 0 1px rgba(128, 57, 0, 0.7);
+  font-size: 20px;
+}
+.jumbotron {
+  background-image: url(img/hannah-wei-aso6SYJZGps-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-top: -65px;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to left, rgb(43, 43, 43), rgba(0, 0, 0, 0));
+  bottom: 0;
+}
+.jumbotron .display-4 {
+  font-family: "Tapestry", cursive;
+  /* color: rgb(255, 161, 161); */
+  color: brown;
+}
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid brown;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3px;
+  margin-bottom: -8px;
+}
+.lead {
+  border-bottom: 3px brown;
+  text-decoration: underline white;
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 25%;
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.7);
+}
+
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -80px;
+  background-color: white;
+  z-index: 1;
+  padding: 20px;
+}
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -6px;
+  font-weight: 200;
+}
+.col-lg .float-left {
+  height: 65px;
+  margin-right: 15px;
+}
+
+/* projects */
+#portfolio {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.card-img-top {
+  height: 430px;
+  padding: 1rem;
+}
+.card-img-down {
+  height: 400px;
+}
+
+.row-title {
+  margin-top: -8%;
+  margin-bottom: 2%;
+  color: black;
+}
+.row-title .col h2 {
+  font-family: "Playfair Display", serif;
+}
+.col h2 {
+  font-weight: 650;
+  font-size: 45px;
+}
+
+.card {
+  margin: 5px;
+}
+
+section {
+  padding-top: 7.7rem;
+}
+/* akhir projects */
+.work {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.imgmedsos {
+  margin: 2px 2px;
+}
+.bg-secondary p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+#box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 9%;
+}
+footer {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .text {
+    color: white;
+    text-align: center;
+    margin-top: 80%;
+  }
+  .nav-link {
+    color: black !important;
+    text-shadow: none;
+  }
+  .nav-link:hover::after {
+    border-bottom: none !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  ...;
+}
